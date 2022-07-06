@@ -1,4 +1,4 @@
-FROM node:13-alpine as build
+FROM node:latest as build
 WORKDIR /app
 COPY package*.json /app/
 RUN npm install -g ionic

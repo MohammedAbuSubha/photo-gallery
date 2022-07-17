@@ -2,9 +2,9 @@ version: '3.9' # optional since v1.27.0
 services:
   docker-app:
     build:
-      context: photo-gallery
+      context: ./
       dockerfile: Dockerfile.dev
     ports:
       - '8100:8100'
     volumes:
-      - ./photo-gallery/src:/ionicApp/src
+      - ./www:/ionicApp/www

@@ -7,4 +7,4 @@ services:
     ports:
       - '8100:8100'
     volumes:
-      - ./www:/ionicApp/www
+      - /src/ /ionicApp/src
